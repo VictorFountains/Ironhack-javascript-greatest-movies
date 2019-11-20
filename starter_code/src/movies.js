@@ -36,7 +36,7 @@ function howManyMovies(arrMovie){
       }
     });
     let howMany = arrDrama.reduce((a,b) =>{
-      return accumlator + Number(value.director === "Steven Spielberg");
+      return a + Number(b.director === "Steven Spielberg");
      },0 );
      return howMany
  }
