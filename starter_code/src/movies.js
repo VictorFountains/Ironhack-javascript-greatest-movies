@@ -56,6 +56,32 @@ function ratesAverage(arr) {
 
 // Iteration 5: Drama movies - Get the average of Drama Movies
 
+function dramaMoviesRate(arrMovie) {
+
+     let arrDrama = arrMovie.filter(function (movie) {
+         if (movie.genre.includes("Drama")) {
+             return true;
+         } else {
+return true;
+         } else {
+             return false;
+         }
+     });
+     
+     if (arrDramaWithRate.length === 0) {
+         return 0;
+     } else {
+         let averageDrama =
+             arrDramaWithRate.reduce(function (accumulator, value) {
+                 return (accumulator += parseFloat(value.rate));
+              
+             }, 0) / arrDramaWithRate.length;
+
+         return averageDrama;
+     }
+ }
+
+ console.log(dramaMoviesRate(movies));
 // Iteration 6: Time Format - Turn duration of the movies from hours to minutes
 
 // BONUS Iteration: Best yearly rate average - Best yearly rate average
